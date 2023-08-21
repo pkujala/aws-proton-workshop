@@ -1,0 +1,19 @@
+schema:
+  format:
+    openapi: "3.0.0"
+  service_input_type: "SNSInput"
+  pipeline_input_type: "PipelineInputs"
+
+  types:
+    LoadBalancedServiceInput:
+      type: object
+      description: "Input properties for a SNS service"
+      properties:
+        topic_name:
+          type: string
+          description: "SNS topic name
+          default: "my-topic"
+        subscription:
+          type: string
+          description: "Email address for SNS subscription"
+          default: "foo@bar.com"
