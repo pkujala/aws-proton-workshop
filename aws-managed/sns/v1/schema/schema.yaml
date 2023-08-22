@@ -5,14 +5,14 @@ schema:
   pipeline_input_type: "PipelineInputs"
 
   types:
-    LoadBalancedServiceInput:
+    SNSServiceInput:
       type: object
       description: "Input properties for a SNS service"
       properties:
         topic_name:
           type: string
           description: "SNS topic name
-          default: "my-topic"
+          default: "my-topic-from-proton"
         subscription:
           type: string
           description: "Email address for SNS subscription"
