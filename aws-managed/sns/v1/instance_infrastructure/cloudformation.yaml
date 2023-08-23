@@ -7,9 +7,9 @@ Resources:
   SNS:
     Type: AWS::SNS::Topic
     Properties:
-      DisplayName: '{{ environment.inputs.topic_name }}''
+      DisplayName: '{{ service_instance.inputs.topic_name }}''
       Subscription:
-          - Endpoint: '{{ environment.inputs.subscription }}'
+          - Endpoint: '{{ service_instance.inputs.subscription }}'
           
   
 # These output values are will be available to service templates, given the
