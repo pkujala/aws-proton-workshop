@@ -14,4 +14,4 @@ Resources:
   
 # These output values are will be available to service templates, given the
 # the 'environment' namespace, for example, environment.outputs.ClusterName.
-Outputs:
+# Outputs:
